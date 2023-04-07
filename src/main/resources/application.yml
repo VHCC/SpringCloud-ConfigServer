@@ -1,0 +1,15 @@
+server:
+  port: 8112
+
+spring:
+#  application:
+#    name: config-single-server  # 应用名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/VHCC/SpringCloud-ConfigServer.git #配置文件所在仓库
+          username: VHCC
+          password: F0973138343f
+          default-label: master #配置文件分支
+#          search-paths: config  #配置文件所在根目录
